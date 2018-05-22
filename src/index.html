@@ -1,0 +1,30 @@
+<html>
+  <head>
+  
+  
+    <script type="text/javascript">
+            // * Important, VMS and either a floating button or static chat button are required to invoke the HTML SDK custom window *
+            // Below are the various options available
+            // These values need to be set before the config file for reconstituion purposes;
+            window._bcChatWindowUrl = 'themes/hubris'; 	// available options are basic, lovato, hubris and nightshade
+            window._bcSessionApiKey = '{your generated api key here}';	// under setup (either in .net client or at setup-boldchat.com)
+            // go to general account settings -> Chat API -> Create a key that is linked to
+            // a website and chat window. Copy that generated key and post here
+            window._bcForcePopup = true;								// here you can override if the sdk window will open up as a popup or a layered window
+            // Available options are: null || true || false
+            // If set to null, the determination of the window opening in layered or popup is determined by whatever window the button you clicked on is tied to.
+            //  For example, let's say you have both a floating button and a static button on your page.
+            //  Further, let's say that the floating button is tied to a popup chat window and the static chat button is tied to a layered chat window.
+            //  In this example, if you click on the floating button, the html sdk will be opened as a popup. The static button will open the window as a
+            //  floating window.
+      </script>
+
+      <!-- inject:bcStart:js -->
+      <script src="scripts/bc-util.js"></script>
+      <script src="scripts/bc-config.js"></script>
+      <script src="scripts/bc-sdk-start.js"></script>
+      <!-- endinject -->
+  </head>
+  <body>
+  </body>
+</html>
